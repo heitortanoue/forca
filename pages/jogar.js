@@ -85,7 +85,7 @@ export default function Jogar() {
             {lose ? <Popup color="rgba(185, 28, 28, .5)">
                 <div className="flex flex-col max-w-sm">
                     <div className="text-red-600 flex gap-2 items-center text-2xl mb-5">
-                        <i class="fas fa-solid fa-skull"></i>
+                        <i className="fas fa-solid fa-skull"></i>
                         <div>Você perdeu!</div>
                     </div>
                     <div> Não foi dessa vez! Sua pontuação foi de <strong>{points.current}</strong>. Entre para o ranking:</div>
@@ -110,7 +110,7 @@ export default function Jogar() {
             {win ? <Popup color="rgba(4, 120, 87, .5)">
                 <div className="flex flex-col max-w-sm">
                     <div className="text-emerald-500 flex gap-2 items-center text-2xl mb-5">
-                        <i class="fas fa-solid fa-medal"></i>
+                        <i className="fas fa-solid fa-medal"></i>
                         <div>Você passou!</div>
                     </div>
                     <div>Será que você consegue passar do próximo nível?!</div>
@@ -135,7 +135,7 @@ export default function Jogar() {
                             </div>
                         </div>
                         <div className="my-10 doll relative m-auto scale-150">
-                            <Image src="/man.png" layout="fill" objectFit={"cover"}
+                            <Image src="/man.png" layout="fill" objectFit={"cover"} alt="doll"
                             objectPosition={`${-doll_position*75}px`} priority/>
                         </div>
                         <div className="flex gap-3">
